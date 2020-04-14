@@ -11,6 +11,8 @@ const httpTrigger: AzureFunction = async function (context: Context, req: HttpRe
         };
     }
     else {
+        context.log.warn("Failed to pass name on query string!");
+        
         context.res = {
             status: 400,
             body: "Please pass a name on the query string or in the request body"
