@@ -7,14 +7,18 @@
     "watch": "tsc -w",
     "prestart": "npm run build",
     "start": "func start",
-    "test": "echo \"No tests yet...\""
+    "test": "jest"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@types/jest": "^25.2.1"
+  },
   "devDependencies": {
     "@azure/functions": "^1.2.0",
-    "typescript": "^3.3.3",
-    "jest": "25.3.0",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-typescript": "7.9.0",
     "babel-jest": "25.2.6",
-    "@babel/preset-typescript": "7.9.0"
+    "jest": "25.3.0",
+    "ts-jest": "^25.3.1",
+    "typescript": "^3.3.3"
   }
 }
