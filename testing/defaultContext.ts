@@ -1,7 +1,6 @@
-import { forceType } from "./helpers";
 import { Context } from "@azure/functions";
 
-const testObj = {
+const testContext = {
     log: {
         info: jest.fn(),
         warn: jest.fn()
@@ -12,4 +11,4 @@ const testObj = {
     }
 };
 
-export default forceType<Context>(testObj)
+export default testContext as any as Context
